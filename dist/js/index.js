@@ -1,0 +1,1 @@
+async function fetchRandomPic(){const n=await fetch("https://api.unsplash.com/photos/random?client_id=KU2xKkCfogrNGxcflWBJ8cqyeAtU2LGMylH6pHmpHis&orientation=landscape&query=nature"),o=await n.json();console.log(o)}
