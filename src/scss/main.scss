@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after{
@@ -5,3 +7,66 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 15px #aaaaaa;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+
+    div.top{
+        align-self: start;
+        display: flex;
+        justify-content: space-between;
+    }
+    .date{
+        align-self: start;
+        text-align: center;
+    }
+       .time{
+        font-size: 2.5rem;
+    }
+    div.crypto p{
+        // margin-top: 0.5em;
+        font-size: 1.3rem;
+        
+        }
+    div.crypto-items{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+    div.weather-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    div.weather{
+        display: grid;
+        grid-template-columns: repeat(2, 5em);
+    }
+    img.weather-img{
+       width: 100%;
+    }
+    div.weather h2{
+        align-self: center;
+        font-size: 2.5rem;
+        text-align: right;
+    }
+    div.weather-container p{
+        // text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        justify-self: end;
+    }
+
+
+}
+
